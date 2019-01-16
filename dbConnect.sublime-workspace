@@ -1,0 +1,432 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"te",
+				"TECHNICAL_DETAILS"
+			],
+			[
+				"PRO",
+				"PRODUCT_WEIGHT_UNIT"
+			],
+			[
+				"Fir",
+				"FIRST_AVAILABLE"
+			],
+			[
+				"SHIP",
+				"SHIPPING_PRICE"
+			],
+			[
+				"board",
+				"board_a"
+			],
+			[
+				"find",
+				"findRepo"
+			],
+			[
+				"to",
+				"toString"
+			],
+			[
+				"name",
+				"name"
+			],
+			[
+				"TO",
+				"toString"
+			],
+			[
+				"admin",
+				"adminStatus"
+			],
+			[
+				"LI",
+				"license"
+			],
+			[
+				"url",
+				"licenseUrl"
+			],
+			[
+				"lis",
+				"licenseUrl"
+			],
+			[
+				"licen",
+				"licenseUrl"
+			],
+			[
+				"lic",
+				"license"
+			],
+			[
+				"descriptionN",
+				"descriptionNotNull2"
+			],
+			[
+				"des",
+				"descriptionMap"
+			],
+			[
+				"descrip",
+				"descriptionArray"
+			],
+			[
+				"func",
+				"function"
+			],
+			[
+				"zero",
+				"zeroStargazers"
+			],
+			[
+				"star",
+				"zeroStargazers"
+			],
+			[
+				"created",
+				"created_at"
+			],
+			[
+				"larges",
+				"largestSize"
+			],
+			[
+				"largest",
+				"largestSize"
+			],
+			[
+				"reposi",
+				"repositoryCounter"
+			],
+			[
+				"reposito",
+				"repository"
+			],
+			[
+				"total",
+				"totalOreWeight"
+			],
+			[
+				"recycle",
+				"recyclableItems"
+			],
+			[
+				"rec",
+				"recycleList"
+			],
+			[
+				"re",
+				"recyclableItems"
+			],
+			[
+				"tot",
+				"totalFuelSupply"
+			],
+			[
+				"con",
+				"consolidatefuel"
+			],
+			[
+				"cl",
+				"toggleCleanedStatus"
+			],
+			[
+				"wo",
+				"wordLengths"
+			],
+			[
+				"crew",
+				"crewIndex"
+			],
+			[
+				"miss",
+				"missingSupplies"
+			],
+			[
+				"suppliesA",
+				"suppliesArray"
+			],
+			[
+				"inventory",
+				"inventoryArray"
+			],
+			[
+				"sn",
+				"snowfall_in"
+			],
+			[
+				"l",
+				"length_launchpad_ft"
+			],
+			[
+				"snowf",
+				"snowfall_in"
+			],
+			[
+				"wi",
+				"width_launchpad_ft"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/User/Chrome.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"snipp",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"",
+				"Preferences: Browse Packages"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"termin",
+				"Terminal View: Open Bash Terminal"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/joe/dataFetch/DEV/headers.py",
+		"/Users/joe/dataFetch/DEV/retID_1_spider_test2.py",
+		"/Users/joe/Library/Application Support/Sublime Text 3/Packages/User/mySQL.sublime-build",
+		"/Users/joe/dataFetch/DEV/screenshot.py",
+		"/Users/joe/dataFetch/DEV/Amazon_Scrapy_Precrawler.py",
+		"/Users/joe/dataFetch/DEV/retID_1_spider.py",
+		"/Users/joe/dataFetch/DEV/retID_1_spider_test.py",
+		"/Users/joe/Library/Application Support/Sublime Text 3/Packages/User/Python3.sublime-build",
+		"/Users/joe/Library/Application Support/Sublime Text 3/Packages/User/Chrome.sublime-build",
+		"/Users/joe/challenges/JavaScript/bank-account-js/code.js",
+		"/Users/joe/.spyder-py3/overstock_test7.html",
+		"/Users/joe/.spyder-py3/overstock_test.html",
+		"/Users/joe/challenges/Ruby/golfing-buddies/golfing-buddies.md",
+		"/Users/joe/challenges/Ruby/golfing-buddies/code.rb",
+		"/Users/joe/challenges/the-right-clubs/the-right-clubs.md",
+		"/Users/joe/challenges/the-right-clubs/.lesson.yml",
+		"/Users/joe/challenges/the-right-clubs/code.rb",
+		"/Applications/MAMP/htdocs/Myfirstwebsite/wp-config.php",
+		"/Users/joe/Documents/Wallpapers/server login",
+		"/Users/joe/challenges/pangram-js/pangram-js.md",
+		"/Users/joe/challenges/pangram-js/main.js",
+		"/Users/joe/challenges/pangram-js/index.html",
+		"/Users/joe/challenges/github-data/data.js",
+		"/Users/joe/challenges/github-data/github-data-resubmit.js",
+		"/Users/joe/challenges/pangram-js/style.css",
+		"/Users/joe/challenges/github-data/github-data.md",
+		"/Users/joe/challenges/checkout-line-js/checkoutLine.js",
+		"/Users/joe/challenges/checkout-line-js/checkout-line-js.md",
+		"/Users/joe/challenges/shopping-cart-js/shoppingCart.js",
+		"/Users/joe/challenges/shopping-cart-js/shopping-cart-js.md",
+		"/Users/joe/challenges/shopping-cart-js/index.html",
+		"/Users/joe/challenges/ninety-nine-bottles-js/main.js",
+		"/Users/joe/challenges/model-a-person-in-js/model-a-person-in-js.md",
+		"/Users/joe/challenges/odd-numbers-js/main.js",
+		"/Users/joe/challenges/odd-numbers-js/style.css",
+		"/Users/joe/challenges/odd-numbers-js/index.html",
+		"/Users/joe/challenges/perimeter-function-js/index.html",
+		"/Users/joe/challenges/ninety-nine-bottles/ninety-nine-bottles.md",
+		"/ninety-nine-bottles-js",
+		"/Users/joe/challenges/dice-game/dice.rb",
+		"/Users/joe/challenges/vacation-adventure/.lesson.yml",
+		"/Users/joe/challenges/firefly-forever-js/code[update].js",
+		"/Users/joe/challenges/firefly-forever-js/code.js",
+		"/Users/joe/challenges/firefly-forever-js/index.html",
+		"/Users/joe/challenges/quiz-app/main.js",
+		"/Users/joe/challenges/js-alert-message/main.js",
+		"/Users/joe/challenges/public-space-flights-javascript/index.html",
+		"/Users/joe/challenges/running-javascript/running-javascript.md",
+		"/Users/joe/challenges/street-show/code.rb",
+		"/Users/joe/challenges/rock-paper-scissors/game.rb",
+		"/Users/joe/challenges/snow-shoveler/code.rb",
+		"/Users/joe/challenges/price-of-admission/code.rb",
+		"/Users/joe/challenges/public-space-flights/public-space-flights.md",
+		"/Users/joe/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/joe/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/joe/challenges/planet-landing-summary/code.rb"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 102.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 532.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/Python3.sublime-build",
+	"project": "dbConnect.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 210.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 592.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 271.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

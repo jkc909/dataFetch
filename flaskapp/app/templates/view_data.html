@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block content %}
+    </br></br>
+    <div class="row">
+    	<div class="small-centered large-centered columns mybox">
+    		<center><h1>View Data</h1></center>
+	    <form action="" method="post" novalidate>
+	        {{ form.hidden_tag() }}
+	        <p>
+	            <h2>{{ form.url.label }}</h2>
+	            <br>
+	            {{ form.url(size=32) }}
+	        </p>
+
+	        <p>{{ form.submit() }}</p>
+	    </form>
+		</div>
+	</div>
+
+</br></br>
+
+	<div class="row">
+		<div class="small-6 large-6 columns"> 
+			<h2>Static Data</h2>
+			<table>
+			{% for key, value in data_result.items() %}
+			    <tr>
+			    	<th> {{ key }} </th>
+			        <td> {{ value }} </td>
+			     </tr>
+			{% endfor %}
+			</table>
+		</div>
+
+		<div class="small-6 large-6 columns"> 
+			<h2>Dynamic Data</h2>
+			<table>
+			{% for key, value in dyn_result.items() %}
+			    <tr>
+			    	<th> {{ key }} </th>
+			        <td> {{ value }} </td>
+			     </tr>
+			{% endfor %}
+			</table>
+
+		</div>
+	</div>
+{% endblock %}

@@ -1,0 +1,23 @@
+<html>
+    <head>
+      {% if title %}
+      <title>{{ title }} - dataFetch</title>
+      {% else %}
+      <title>Welcome to dataFetch!</title>
+      {% endif %}
+      
+      <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/foundation.min.css') }}">
+      <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/index.css') }}">
+    </head>
+    <body>
+        <div>dataFetch: 
+          <a href="/index">Home</a> | 
+          <a href="/add_url">Add a URL</a> | 
+          <a href="/view_data">View Data</a>
+        </div>
+    </body>
+        
+        <hr>
+        {% block content %}{% endblock %}
+    
+</html>
