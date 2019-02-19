@@ -4,7 +4,7 @@ Web crawling platform for scraping e-commerce pages and generating fuzzy match s
 # About
 Hello and thank you for checking out dataFetch. This application is my first big side project as a developer, and as I built it I taught myself Python. I built the application for self enrichment while I was attending Launch Academy, a web development bootcamp focusing on Rails and React. I had a lot of fun building this application and it was an amazing learning process for me. That being said, please keep in mind this is still a work in progress and I am still learning new things every day :)
 
-I built this application using Python and MySQL. Main Python libraries used include SqlAlchemy, Beautifulsoup, and fuzzywuzzy.
+I built this application using Python and MySQL. Main Python libraries used include SqlAlchemy, Beautifulsoup, Flask and fuzzywuzzy.
 
 Also be sure to check out my related application matchMaker, it is a UI for reviewing match suggestions built with Rails and React: https://github.com/jkc909/match-maker
 
