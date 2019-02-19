@@ -8,7 +8,7 @@ I built this application using Python and MySQL. Main Python libraries used incl
 
 Also be sure to check out my related application matchMaker, it is a UI for reviewing match suggestions built with Rails and React: https://github.com/jkc909/match-maker
 
-### Some features of the app:
+### Some features of dataFetch:
 - New products can be added to an existing retailer simply by inserting a new URL
 - The master.py file triggers the crawling process and listens to the database for new URLs to be added to the queue
 - Crawls are triggered when URLs in the queue are marked for crawling
