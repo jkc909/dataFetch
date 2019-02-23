@@ -1,5 +1,5 @@
 
-from sqlalchemy import Column, Integer, String, Boolean, DateTime, Date, SmallInteger, ForeignKey, Numeric
+from sqlalchemy import Column, Integer, String, Boolean, DateTime, Date, SmallInteger, ForeignKey, Float
 from sqlalchemy.orm import relationship
 from datetime import datetime
 from dbBase import Base
@@ -20,19 +20,20 @@ class Static(Base):
 	staImageCount = Column(Integer)
 	staDescription = Column(String(10025))
 	staMainImage = Column(String(255))
-	staShippingWeight = Column(Numeric)
+	staShippingWeight = Column(Float)
 	staShippingWeightUnit = Column(String(50))
 	staBestSeller1 = Column(String(255))
 	staBestSeller2 = Column(String(255))
 	staBestSeller3 = Column(String(255))
 	staFirstAvailable = Column(Date())
 	staBrand = Column(String(255))
-	staItemWeight = Column(Numeric)
+	staItemWeight = Column(Float)
 	staItemWeightUnit = Column(String(50))
 	staDimensions = Column(String(255))
 	staDimensionsUnit = Column(String(255))
 	staAplus = Column(Boolean)
 	staLastCrawl = Column(Integer, ForeignKey('tblCrawlResult.crlId'))
+	mat = relationship('Matches')
 
 
 	def __init__(self, urlId, retId, crlId, data):

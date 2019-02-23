@@ -45,9 +45,10 @@ def add_url():
 @app.route('/view_data', methods=['GET', 'POST'])
 def view_data():
     form = ViewData()
-    data_result = {'results': [], 'static_data': {}}
-    print(data_result)
+    data_result = {'results': [], 'static_data': {}, 'return_data': ''}
     if form.url.data and form.url.data != "":
         data_result = getData(form.url.data)
-        print(data_result)
-    return render_template('view_data.html', title='ayy check out this data bro lmao', form=form, data_result=data_result.return_data[0], dyn_result=data_result.return_data[1])
+    try:
+        return render_template('view_data.html', title='ayy check out this data bro lmao', form=form, data_result=data_result.return_data[0], dyn_result=data_result.return_data[1])
+    except:
+        return render_template('view_data_init.html', title='ayy check out this data bro lmao', form=form)

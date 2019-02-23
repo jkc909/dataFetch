@@ -8,7 +8,7 @@ from dbBase import Base
 class Urls(Base):
 	__tablename__ = 'tblUrls'
 
-	urlId = Column(Integer, autoincrement = True, primary_key = True)
+	urlId = Column(Integer, autoincrement = True, primary_key = True, unique=True)
 	urlUrl = Column(String(255), primary_key = True, unique=True)
 	urlRetId = Column(Integer, ForeignKey('tblRetailer.retId'))
 	urlBadUrl = Column(Boolean)

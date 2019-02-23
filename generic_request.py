@@ -31,5 +31,6 @@ class make_request():
 			f = open (filename, "w+")
 			f.write(raw_html.text)
 			f.close()
+			print('from file')
 
 		return(bs_format, status_code)

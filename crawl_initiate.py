@@ -19,6 +19,11 @@ class crawl_sorter():
 			from generic_request import make_request
 			response = make_request(self.url, self.headers).request()
 			return response
+		elif (self.retId == 2):
+			print("Sweetwater")
+			from retailer2.sweetwater_request import make_request 
+			response = make_request(self.url, self.headers).request()
+			return response
 
 	def return_value(self):
 		time.sleep(1)

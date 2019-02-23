@@ -33,5 +33,8 @@ class start_and_run():
 						data[0][2])
 		update = update_database(final_payload).return_value()
 		print(update)
-		
-start_and_run().start()
+
+import time		
+while True:
+	start_and_run().start()
+	time.sleep(1)
