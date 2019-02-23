@@ -2,7 +2,9 @@ from sqlalchemy import Column, Integer, DateTime, ForeignKey, func
 from sqlalchemy.orm import relationship
 from dbBase import Base
 
-from ORM.tables import tblCaptcha
+
+
+
 
 class CrawlResult(Base):
 	__tablename__ = 'tblCrawlResult'

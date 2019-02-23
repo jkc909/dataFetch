@@ -5,13 +5,16 @@ class Data:
         if self.retId == 1:
             from amz_parser import Spider
             self.SpiderInstance = Spider(self.content)
-
+        elif self.retId == 2:
+            from retailer2 import ret_2_pdp_parser 
+            self.SpiderInstance = ret_2_pdp_parser.Spider(self.content)
+            
     def payload(self):
         payload=(Data.crawl_data(self),\
                 Data.technical_details(self),
                 self.staChildIdentifier)
+        print(payload)
         return payload
-
 
     def technical_details(self):
         TECH_DETAILS_DICT = {}
@@ -62,7 +65,7 @@ class Data:
         except:
             pass
         try:
-            data['staDescription'] = "PASS UNTIL YOU FIX THIS SHEIT"
+            data['staDescription'] = self.SpiderInstance.findDescription()
         except:
             pass
         try:

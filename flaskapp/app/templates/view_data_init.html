@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+    </br></br>
+    <div class="row">
+    	<div class="small-centered large-centered columns mybox">
+    		<center><h1>View Data</h1></center>
+	    <form action="" method="post" novalidate>
+	        {{ form.hidden_tag() }}
+	        <p>
+	            <h2>{{ form.url.label }}</h2>
+	            <br>
+	            {{ form.url(size=32) }}
+	        </p>
+
+	        <p>{{ form.submit() }}</p>
+	    </form>
+		</div>
+	</div>
+
+
+{% endblock %}

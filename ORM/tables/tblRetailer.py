@@ -9,7 +9,7 @@ class Retailer(Base):
 
 	retId = Column(Integer, \
 					autoincrement = True, \
-					primary_key = True)
+					primary_key = True, unique=True)
 	retName = Column(String(255), \
 					primary_key = True, \
 					unique=True)
@@ -19,6 +19,7 @@ class Retailer(Base):
 	dyn = relationship('Dynamic')
 	crl = relationship('CrawlResult')
 	cap = relationship('Captcha')
+	mat = relationship('Matches')
 
 	def __init__(self, retailer_name):
 		self.retName = retailer_name

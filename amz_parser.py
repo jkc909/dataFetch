@@ -141,7 +141,13 @@ class Spider:
                     break
             except:
                 pass
-            buybox_price = '[!Error: buybox_price Not Found]'
+            try:
+                buybox_price = float(self.content.find('span',attrs={'class':'a-color-price price3P'}).text.replace('$',''))
+                if buybox_price:
+                    break
+            except:
+                pass
+            buybox_price = 0
             return buybox_price
         return buybox_price
         
@@ -173,7 +179,7 @@ class Spider:
                     break
             except:
                 pass
-            shipping_price = '[!Error: shipping_price Not Found]'
+            shipping_price = 0
             return shipping_price
         if "FREE Shipping" in shipping_price:
             shipping_price = 0
@@ -181,8 +187,11 @@ class Spider:
         else: 
             try:
                 shipping_price = ' '.join(''.join(shipping_price).split())
+                shipping_price = re.findall("\d+\.\d+", shipping_price)
+                shipping_price = shipping_price[0]
+
             except:
-                shipping_price = '[!Error: shipping_price Not Found]'
+                shipping_price = 0
         return shipping_price
 
     def findStockStatus(self):
@@ -269,42 +278,44 @@ class Spider:
         elif 'Ships from and sold by' in shipped_by:
             try:
                 shipped_by = self.content.find('div',attrs={'id':'merchant-info'}).select_one('a[href*=merchant_link]').text
+                shipped_by = ' '.join(''.join(shipped_by.text).split())
             except:
                 shipped_by = '[!Error: shipped_by Not Found]'
         return shipped_by    
 
     def findDescription(self):
-        while True:
-            try:
-                description = self.content.find('div',attrs={'id':'aplus_feature_div'}).text
-                # print(description)
-                # description = re.sub(r'[^*]*\}*\)*\;*\}(.*)',r'\1',description)
-                description = ' '.join(''.join(description).split())
-                description = re.sub(r'[^*]*\}*\)*\;*\}(.*)',r'\1',description)
-                description = re.sub(r'[^*]*emoving for for carousel, reinvestigate(.*)',r'\1',description)
-                description = ' '.join(''.join(description).split())
-                return description
-            except:
-                pass
-            try:
-                description = re.sub(r'.*\#productDescription[^*]*','',(self.content.find('div',attrs={'id':'productDescription_feature_div'})).text).replace('Product description','')
-                if description:
-                    description = ' '.join(''.join(description).split())
-                    return description
-            except:
-                pass
-            try:
-                description = re.sub(r'[^*]*\}*\)*\;*\}','',(self.content.find('div',attrs={'id':'aplus3p_feature_div'})).text)
-                if description:
-                    description = ' '.join(''.join(description).split())
-                    return description
-            except:
-                pass
+        return("need to fix this")
+        # while True:
+        #     try:
+        #         description = self.content.find('div',attrs={'id':'aplus_feature_div'}).text
+        #         # print(description)
+        #         # description = re.sub(r'[^*]*\}*\)*\;*\}(.*)',r'\1',description)
+        #         description = ' '.join(''.join(description).split())
+        #         description = re.sub(r'[^*]*\}*\)*\;*\}(.*)',r'\1',description)
+        #         description = re.sub(r'[^*]*emoving for for carousel, reinvestigate(.*)',r'\1',description)
+        #         description = ' '.join(''.join(description).split())
+        #         return description
+        #     except:
+        #         pass
+        #     try:
+        #         description = re.sub(r'.*\#productDescription[^*]*','',(self.content.find('div',attrs={'id':'productDescription_feature_div'})).text).replace('Product description','')
+        #         if description:
+        #             description = ' '.join(''.join(description).split())
+        #             return description
+        #     except:
+        #         pass
+        #     try:
+        #         description = re.sub(r'[^*]*\}*\)*\;*\}','',(self.content.find('div',attrs={'id':'aplus3p_feature_div'})).text)
+        #         if description:
+        #             description = ' '.join(''.join(description).split())
+        #             return description
+        #     except:
+        #         pass
 
 
-            description = '[!Error: description Not Found]'
-            return description
-        return description
+        #     description = '[!Error: description Not Found]'
+        #     return description
+        # return description
 
     def findParentASIN(self):
         while True:
@@ -384,12 +395,12 @@ class Spider:
                     break
             except:
                 pass
-            rating = '[!Error: rating Not Found]'
+            rating = None
             return rating
         try:
             rating = re.sub("out of.*","",re.search(r".*out of.*",rating).group(0)).replace(" ","")
         except:
-            rating = '[!Error: rating Could Not Parse]'
+            rating = None
         return rating
 
     def findReviewCount(self):
@@ -408,7 +419,11 @@ class Spider:
         try:
             review_count = re.sub("customer reviews.*","",re.search(r".*\d customer reviews.*",review_count).group(0)).replace(" ","").replace(',','')
         except:
-            review_count = '[!Error: review_count Could Not Parse]'
+            pass
+        try:
+            review_count = re.sub("customer review.*","",re.search(r".*\d customer review.*",review_count).group(0)).replace(" ","").replace(',','')
+        except:
+            pass
         return review_count
 
     def findShippingWeight(self):
@@ -666,7 +681,7 @@ class Spider:
         try:
             dimensions = dimensions.replace(dimensions_unit,'').replace(' ','').split('x')
         except:
-            dimensions = '[!Error: dimensions Not Found]'
+            dimensions = {}
         DIMS = dict();
         DIMS['dimensions'] = str(json.dumps(dimensions))
         DIMS['dimensions_unit'] = dimensions_unit

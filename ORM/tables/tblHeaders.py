@@ -11,11 +11,11 @@ class Headers(Base):
 							primary_key = True)
 	hedHeader = Column(JSON)
 	hedScore = Column(Integer)
-	hedDateAdded = Column(DateTime, default = func.now)
+	hedDateAdded = Column(DateTime)
 	crl = relationship('CrawlResult')
 
 	def __init__(self, header, score = 0):
-		pass
+		self.hedHeader = header
 		# self.urlDateModified = datetime.now().replace(microsecond=0)
 
 

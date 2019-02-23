@@ -1,5 +1,5 @@
 
-from sqlalchemy import Column, Integer, String, Boolean, DateTime, SmallInteger, ForeignKey, Numeric, Date
+from sqlalchemy import Column, Integer, String, Boolean, DateTime, SmallInteger, ForeignKey, Numeric, Date, Float
 from sqlalchemy.orm import relationship
 from datetime import datetime
 from dbBase import Base
@@ -11,13 +11,13 @@ class Dynamic(Base):
 	dynStaId = Column(Integer, ForeignKey('tblStatic.staId'), primary_key = True)
 	dynRetId = Column(Integer, ForeignKey('tblRetailer.retId'))
 	dynCrlId = Column(Integer, ForeignKey('tblCrawlResult.crlId'))
-	dynPrice = Column(Numeric)
+	dynPrice = Column(Float)
 	dynStockStatus = Column(Boolean)
 	dynSeller = Column(String(255))
 	dynShippedBy = Column(String(255))
-	dynShipPrice = Column(Numeric)
+	dynShipPrice = Column(Float)
 	dynAnsweredQuestions = Column(Integer)
-	dynRating = Column(Numeric)
+	dynRating = Column(Float)
 	dynReviewCount = Column(Integer)
 	dynStockMessage = Column(String(255))
 	dynZipCode = Column(String(16))

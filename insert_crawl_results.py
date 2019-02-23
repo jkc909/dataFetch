@@ -6,6 +6,8 @@ from ORM.tables.tblRetailer import *
 from ORM.tables.tblStatic import *
 from ORM.tables.tblUrlQueue import *
 from ORM.tables.tblUrls import *
+from ORM.tables.tblCaptcha import *
+from ORM.tables.tblMatches import *
 
 class update_database():
 	def __init__(self, payload):
